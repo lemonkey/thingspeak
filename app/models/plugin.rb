@@ -52,7 +52,7 @@ class Plugin < ActiveRecord::Base
   def url
     domain = 'https://thingspeak.com'
     domain = 'http://staging.thingspeak.com' if Rails.env.staging?
-    domain = 'http://127.0.0.1:3000' if Rails.env.development?
+    domain = 'http://#{config.constants.HOST}' if Rails.env.development?
     return "#{domain}/plugins/#{self.id}"
   end
 
