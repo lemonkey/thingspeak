@@ -11,3 +11,14 @@ rescue Bundler::GemNotFound => e
   STDERR.puts "Try running `bundle install`."
   exit!
 end if File.exist?(gemfile)
+
+require 'rails/commands/server'
+
+module Rails
+  class Server
+    alias :default_options_alias :default_options
+    def default_options
+      default_options_alias.merge!(:Port => 8080)
+    end
+  end
+end
