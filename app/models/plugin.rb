@@ -50,9 +50,12 @@ class Plugin < ActiveRecord::Base
 
   # url for the plugin
   def url
-    domain = 'https://thingspeak.com'
-    domain = 'http://staging.thingspeak.com' if Rails.env.staging?
-    domain = 'http://aws_nats:8080' if Rails.env.development?
+    #domain = 'https://thingspeak.com'
+    #domain = 'http://staging.thingspeak.com' if Rails.env.staging?
+    #domain = 'http://aws_nats:8080' if Rails.env.development?
+    #
+    # 20190321
+    domain = 'http://#{@domain}'
     return "#{domain}/plugins/#{self.id}"
   end
 

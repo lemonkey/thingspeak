@@ -2,8 +2,6 @@
 <html style="height: 100%;">
   <head>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//aws_nats:8080/highcharts-3.0.8.js"></script>
-    <script type="text/javascript" src="//aws_nats:8080/exporting.js"></script>
 
     <%= javascript_include_tag 'application' %>
 
@@ -51,6 +49,7 @@
                 renderTo: 'chart-container',
                 defaultSeriesType: '<%= params[:type] ? "#{params[:type]}" : "line" %>',
                 backgroundColor: '<%= params[:bgcolor] || "#ffffff" %>',
+                zoomType: 'x',
                 events: {
                   load: function() {
                     //if dynamic and no "timeslice" options are set
@@ -112,6 +111,10 @@
           title: {
               text: ''
           },
+          subtitle: {
+              text: document.ontouchstart === undefined ?
+                 'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+          },
           plotOptions: {
             line: {
               color: '<%= params[:color] || "#d62020" %>'
@@ -167,7 +170,7 @@
           ],
           credits: {
               text: 'ThingSpeak.com',
-              href: 'https://thingspeak.com/',
+              href: current_host_port,
               style: { color: '#D62020' }
           }
         };

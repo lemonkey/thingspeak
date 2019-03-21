@@ -1,6 +1,11 @@
 Thingspeak::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
 
+  # 20190320
+  config.eager_load = false
+  config.hostname = "localhost"
+  config.port = "8080"
+
   # required by devise
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
@@ -13,7 +18,7 @@ Thingspeak::Application.configure do
   config.action_controller.perform_caching = true
 
   # Specifies the header that your server uses for sending files
-  config.action_dispatch.x_sendfile_header = "X-Sendfile"
+  #config.action_dispatch.x_sendfile_header = "X-Sendfile"
 
   # For nginx:
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
@@ -32,8 +37,9 @@ Thingspeak::Application.configure do
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this
-  config.serve_static_assets = false
-
+  # config.serve_static_assets = false
+  config.serve_static_assets = true
+  #
   # Enable serving of images, stylesheets, and javascripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
 
@@ -54,13 +60,19 @@ Thingspeak::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
+  # true uses more memory: https://guides.rubyonrails.org/asset_pipeline.html
   config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true
 
   # Defaults to Rails.root.join("public/assets")
-  # config.assets.manifest = YOUR_PATH
+  #config.assets.manifest = "public/assets"
+
+  # 20190321
+  # NEW:
+  # config.assets.prefix = "/assets"
+  #config.assets.debug = true
 
   config.assets.js_compressor  = :uglifier
   config.assets.css_compressor = :scss

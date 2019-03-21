@@ -191,7 +191,7 @@ class ApplicationController < ActionController::Base
       rescue
         u += '/'
       end
-      u = u.sub(/http:/, 'https:') if (Rails.env == 'production' and ssl)
+      # u = u.sub(/http:/, 'https:') if (Rails.env == 'production' and ssl)
       return u
     end
 
@@ -201,9 +201,10 @@ class ApplicationController < ActionController::Base
 
     # domain for the api
     def api_domain(ssl=false)
-      output = (Rails.env == 'production') ? API_DOMAIN : domain
-      output = output.sub(/http:/, 'https:') if ssl == true
-      return output
+      return domain
+      # output = (Rails.env == 'production') ? API_DOMAIN : domain
+      # output = output.sub(/http:/, 'https:') if ssl == true
+      # return output
     end
 
     # ssl domain for the api

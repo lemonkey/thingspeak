@@ -16,7 +16,7 @@
       var lat, lng, latlng, marker, title;
 
       // get the data with a webservice call
-      $.getJSON('<%= "#{@domain}channels/#{params[:channel_id]}/feed.json?callback=?&location=true&results=0#{@qs}" %>', function(data) {
+      $.getJSON('<%= "#{request.protocol}#{request.host_with_port}/channels/#{params[:channel_id]}/feed.json?callback=?&location=true&results=0#{@qs}" %>', function(data) {
         // if no access
         if (data == '-1') {
           $('#chart-container').append('<%= t(:chart_no_access) %>');

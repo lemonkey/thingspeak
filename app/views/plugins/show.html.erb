@@ -1,1 +1,10 @@
-<%= raw(@output) %>
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+  <!-- Include these so the plugins don't have to define javascript paths... 20190321 -->
+  <%= javascript_include_tag 'application' %>
+</head>
+<body>
+  <%= raw(@output) %>
+</body>
+</html>

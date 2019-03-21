@@ -44,10 +44,15 @@
         renderTo: 'chart-container',
         defaultSeriesType: 'line',
         backgroundColor: '#ffffff',
+        zoomType: 'x',
         events: { }
       },
       title: { text: chart_title },
-      plotOptions: {
+        subtitle: {
+            text: document.ontouchstart === undefined ?
+                'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+        },
+        plotOptions: {
         series: {
           marker: { radius: 3 },
           animation: true,
@@ -73,7 +78,7 @@
       legend: { enabled: false },
       credits: {
         text: 'ThingSpeak.com',
-        href: 'https://thingspeak.com/',
+        href: current_host_port,
         style: { color: '#D62020' }
       }
     };
@@ -87,7 +92,7 @@
     var field_name = 'field' + field_number;
 
     // get the data with a webservice call
-    $.getJSON('https://api.thingspeak.com/channels/' + channel_id + '/fields/' + field_number + '.json?offset=0&round=2&results=' + results + '&api_key=' + api_key, function(data) {
+    $.getJSON(current_host_port + 'channels/' + channel_id + '/fields/' + field_number + '.json?offset=0&round=2&results=' + results + '&api_key=' + api_key, function(data) {
 
       // blank array for holding chart data
       var chart_data = [];

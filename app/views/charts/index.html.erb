@@ -10,7 +10,7 @@
       :locals => {
         :displayconfig => true,
         :title => t(:chart_example),
-        :src => "http://aws_nats:8080/channels/3/charts/1",
+        :src => "http://#{@domain}channels/3/charts/1",
         :options => '&timescale=60&round=2',
         :index => 0,
         :width => @width,
@@ -28,7 +28,7 @@
         :locals => {
                       :displayconfig => true,
           :title => "#{@channel.name} - #{@channel[attr]}",
-          :src => "#{@domain}channels/#{@channel_id}/charts/#{attr[-1]}",
+          :src => "#{@domain}/channels/#{@channel_id}/charts/#{attr[-1]}",
           :options => @channel["options#{attr[-1]}"],
           :index => attr[-1],
           :width => @width,

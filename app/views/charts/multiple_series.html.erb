@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html style="height: 100%;">
   <head>
+
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//aws_nats:8080/highcharts-3.0.8.js"></script>
-    <script type="text/javascript" src="//aws_nats:8080/exporting.js"></script>
 
     <script type="text/javascript">
       // variables for the first series
@@ -80,7 +79,7 @@
           legend: { enabled: false },
           credits: {
             text: 'ThingSpeak.com',
-            href: 'https://thingspeak.com/',
+            href: current_host_port,
             style: { color: '#D62020' }
           }
         };
@@ -94,7 +93,7 @@
         var field_name = 'field' + field_number;
 
         // get the data with a webservice call
-        $.getJSON('https://api.thingspeak.com/channels/' + channel_id + '/fields/' + field_number + '.json?offset=0&round=2&results=' + results + '&api_key=' + api_key, function(data) {
+        $.getJSON(current_host_port + '/channels/' + channel_id + '/fields/' + field_number + '.json?offset=0&round=2&results=' + results + '&api_key=' + api_key, function(data) {
 
           // blank array for holding chart data
           var chart_data = [];

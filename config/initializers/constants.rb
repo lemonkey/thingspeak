@@ -11,10 +11,10 @@ RATE_LIMIT_FREQUENCY = '15'
 # main production server to handle all requests (can be a proxy)
 APPLICATION_IP_ADDRESS = '127.0.0.1'
 
-HOST = 'aws_nats:8080'
+#HOST = 'aws_nats:8080'
 
-# domain for the API
-API_DOMAIN = 'http://aws_nats:8080/'
+# domain for the API (used for production links)
+#API_DOMAIN = 'http://aws_nats:8080/'
 
 # get api key from HTTP headers if this value is present
 HTTP_HEADER_API_KEY_NAME = 'THINGSPEAKAPIKEY'

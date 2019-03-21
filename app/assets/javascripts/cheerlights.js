@@ -14,7 +14,7 @@ $(document).on('page:load ready', function() {
 // cheerlights update
 function cheerlightsUpdate() {
   // get the data with a webservice call
-  $.getJSON('http://aws_nats:8080/channels/1417/feed/last.json', function(data) {
+  $.getJSON('http://#{@domain}/channels/1417/feed/last.json', function(data) {
     // if the field1 has data update the page
     if (data.field1) {
       if (data.field1 == "warmwhite") {data.field1 = "oldlace"}
