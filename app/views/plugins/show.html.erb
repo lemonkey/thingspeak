@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html style="height: 100%;">
 <head>
-  <!-- Include these so the plugins don't have to define javascript paths... 20190321 -->
+
+  <!-- THIS IS THE MAIN FIX THAT WAS NEEDED FOR PLUGINS... BE SURE TO REMOVE THE EXISTING jquery SRC FROM ANY SAVED PLUGINS 20190322 -->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <!-- Include these so the plugins don't have to define javascript paths for highcharts, exporter and custom javascript variables like current_host_port... 20190321 -->
   <%= javascript_include_tag 'application' %>
 </head>
 <body>

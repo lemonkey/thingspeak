@@ -56,6 +56,12 @@ class Plugin < ActiveRecord::Base
     #
     # 20190321
     domain = 'http://#{@domain}'
+
+    # 20190322
+    # domain = 'http://#{@domain}'
+    domain = 'http://localhost:8080' if Rails.env.development?
+    domain = 'http://aws_nats:8080' if Rails.env.production?
+
     return "#{domain}/plugins/#{self.id}"
   end
 
