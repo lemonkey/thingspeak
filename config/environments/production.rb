@@ -67,12 +67,8 @@ Thingspeak::Application.configure do
   config.assets.digest = true
 
   # Defaults to Rails.root.join("public/assets")
-  #config.assets.manifest = "public/assets"
-
-  # 20190321
-  # NEW:
-  # config.assets.prefix = "/assets"
-  #config.assets.debug = true
+  # Note: requires that you run `rake assets:precompile` at least once
+  # config.assets.manifest = "public/assets"
 
   config.assets.js_compressor  = :uglifier
   config.assets.css_compressor = :scss

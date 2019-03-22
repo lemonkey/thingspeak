@@ -38,7 +38,9 @@ Thingspeak::Application.configure do
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 
-  config.assets.debug = true
+  # Don't set this to true if assets.compile is true. otherwise
+  # you might see jquery-ujs already loaded js console errors... 20190322
+  #config.assets.debug = true
 
 end
 

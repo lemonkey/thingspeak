@@ -13,6 +13,25 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 
+/////////////////////////////////////////////////////////////////////////////////
+/// Note: Via the Gemfile, jquery-rails 3.0.4 uses jQuery v1.10.2.
+/// This gem also installs jquery-ui-rails 5.0.0, which uses jQuery UI v1.11.0.
+///
+/// Note that the original version of this file doesn't specify jquery itself
+/// but instead relies on manual minified version of jQuery 1.9.1 from the
+/// source itself.
+///
+///     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+///     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+///
+/// jquery_ujs an "unobtrusive scripting adapter for jQuery
+/// https://github.com/rails/jquery-ujs
+///
+/// If we were to remove the manual script tags for jQuery 1.9.1 throughout the
+/// site and add require jquery and jquery-ui below, then a lot of the site
+/// will break as its code is dependent on jquery 1.9.1. -- 20190322
+/////////////////////////////////////////////////////////////////////////////////
+
 //= require jquery_ujs
 //= require turbolinks
 //= require ./jquery.cookie.js

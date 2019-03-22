@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html style="height: 100%;">
   <head>
+    <!-- This jquery import is necessary and must come before application include tag BUT DO NOT include jquery in application.js. 20190322 -->
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <%= javascript_include_tag 'application' %>
@@ -49,7 +50,7 @@
                 renderTo: 'chart-container',
                 defaultSeriesType: '<%= params[:type] ? "#{params[:type]}" : "line" %>',
                 backgroundColor: '<%= params[:bgcolor] || "#ffffff" %>',
-                zoomType: 'x',
+                zoomType: 'x', // added 20190321
                 events: {
                   load: function() {
                     //if dynamic and no "timeslice" options are set

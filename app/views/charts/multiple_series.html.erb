@@ -2,6 +2,7 @@
 <html style="height: 100%;">
   <head>
 
+    <!-- This jquery import is necessary. 20190322 -->
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <script type="text/javascript">
@@ -50,9 +51,14 @@
             renderTo: 'chart-container',
             defaultSeriesType: 'line',
             backgroundColor: '#ffffff',
+            zoomType: 'x', // added 20190322
             events: { }
           },
           title: { text: chart_title },
+          subtitle: {
+              text: document.ontouchstart === undefined ?
+                  'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+          },
           plotOptions: {
             series: {
               marker: { radius: 3 },
@@ -75,7 +81,7 @@
             title: { text: 'Date' }
           },
           yAxis: { title: { text: y_axis_title } },
-          exporting: { enabled: false },
+          exporting: { enabled: true }, // enabled exporting 20190322
           legend: { enabled: false },
           credits: {
             text: 'ThingSpeak.com',

@@ -44,7 +44,7 @@
         renderTo: 'chart-container',
         defaultSeriesType: 'line',
         backgroundColor: '#ffffff',
-        zoomType: 'x',
+        zoomType: 'x', // added 20190321
         events: { }
       },
       title: { text: chart_title },
@@ -74,7 +74,7 @@
         title: { text: 'Date' }
       },
       yAxis: { title: { text: y_axis_title } },
-      exporting: { enabled: false },
+      exporting: { enabled: true }, // enabled 20190322
       legend: { enabled: false },
       credits: {
         text: 'ThingSpeak.com',
