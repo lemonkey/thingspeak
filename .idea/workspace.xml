@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c286f6c4-2fbc-47e1-be18-3b0912515fde" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/plugin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/plugin.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/channels/social_show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/channels/social_show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/charts/multiple_series.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/charts/multiple_series.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/charts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/charts/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/maps/channel_show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/maps/channel_show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/pages/social_home.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/social_home.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/plugins/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/plugins/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/plugins/templates/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/plugins/templates/chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/plugins/templates/gauge.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/plugins/templates/gauge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/manifest-27c2ec8d97bd8487cae01bba17cdddb9.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/manifest-27c2ec8d97bd8487cae01bba17cdddb9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -31,26 +18,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/thingspeak@Dev.rcov" NAME="Dev Coverage Results" MODIFIED="1553285806208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thingspeak" />
+    <SUITE FILE_PATH="coverage/thingspeak@Dev.rcov" NAME="Dev Coverage Results" MODIFIED="1553289627479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thingspeak" />
     <SUITE FILE_PATH="coverage/thingspeak@Precompile_Production_Assets.rcov" NAME="Precompile Production Assets Coverage Results" MODIFIED="1553287582032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thingspeak" />
     <SUITE FILE_PATH="coverage/thingspeak@Prod.rcov" NAME="Prod Coverage Results" MODIFIED="1553288697915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thingspeak" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/maps/channel_show.html.erb">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+            <state relative-caret-position="510">
+              <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/maps/show.html.erb">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="104">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -58,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/plugins/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="195">
               <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
             </state>
           </provider>
@@ -66,28 +53,23 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/channels/public_show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-669" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/charts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="154" column="12" lean-forward="true" selection-start-line="154" selection-start-column="12" selection-end-line="154" selection-end-column="12" />
-              <folding>
-                <element signature="e#2374#5925#0#HTML" />
-              </folding>
+            <state relative-caret-position="2310">
+              <caret line="154" column="12" selection-start-line="154" selection-start-column="12" selection-end-line="154" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/docs/charts.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -95,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/charts/multiple_series.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
+            <state relative-caret-position="1905">
               <caret line="127" column="40" selection-start-line="127" selection-start-column="40" selection-end-line="127" selection-end-column="40" />
             </state>
           </provider>
@@ -104,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/feed_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="167" column="54" lean-forward="true" selection-start-line="167" selection-start-column="54" selection-end-line="167" selection-end-column="54" />
+            <state relative-caret-position="2505">
+              <caret line="167" column="54" selection-start-line="167" selection-start-column="54" selection-end-line="167" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -113,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/plugins/templates/chart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
+            <state relative-caret-position="1155">
               <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
             </state>
           </provider>
@@ -122,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
+            <state relative-caret-position="945">
               <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
             </state>
           </provider>
@@ -200,6 +182,7 @@
         <option value="$PROJECT_DIR$/app/views/charts/multiple_series.html.erb" />
         <option value="$PROJECT_DIR$/app/views/plugins/templates/chart.js" />
         <option value="$PROJECT_DIR$/app/controllers/feed_controller.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
@@ -221,17 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="RailsProjectView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="thingspeak" type="52f3b0f7:RailsProjectNode" />
-              <item name="thingspeak" type="ca5d24b0:RailsModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -301,6 +273,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="RailsProjectView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="thingspeak" type="52f3b0f7:RailsProjectNode" />
+              <item name="thingspeak" type="ca5d24b0:RailsModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,7 +314,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Rails.Prod">
+  <component name="RunManager" selected="Rails.Dev">
     <configuration name="Dev" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="thingspeak" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -454,11 +437,12 @@
       <workItem from="1553185432053" duration="9644000" />
       <workItem from="1553284885929" duration="57000" />
       <workItem from="1553284946280" duration="3895000" />
+      <workItem from="1553289598187" duration="167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21514000" />
+    <option name="totallyTimeSpent" value="21681000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,15 +455,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="26" width="1327" height="1056" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24747081" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25136188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.9022727" visible="true" weight="0.2901169" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.9022727" weight="0.2901169" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.31614906" weight="0.32983682" />
@@ -510,9 +493,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/feed/_index.json.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/feed/index.xml.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -660,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="944">
@@ -747,13 +720,6 @@
     <entry file="file://$PROJECT_DIR$/public/assets/active_admin/application.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/maps/channel_show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/channels/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -768,10 +734,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/maps/channel_show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+        <state relative-caret-position="105">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -784,51 +750,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/plugins/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="195">
           <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/channels/public_show.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/charts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-669" />
+        <state relative-caret-position="2310">
+          <caret line="154" column="12" selection-start-line="154" selection-start-column="12" selection-end-line="154" selection-end-column="12" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/charts/multiple_series.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
+        <state relative-caret-position="1905">
           <caret line="127" column="40" selection-start-line="127" selection-start-column="40" selection-end-line="127" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/plugins/templates/chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/feed_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="167" column="54" lean-forward="true" selection-start-line="167" selection-start-column="54" selection-end-line="167" selection-end-column="54" />
+        <state relative-caret-position="2505">
+          <caret line="167" column="54" selection-start-line="167" selection-start-column="54" selection-end-line="167" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/charts/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/plugins/templates/chart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="154" column="12" lean-forward="true" selection-start-line="154" selection-start-column="12" selection-end-line="154" selection-end-column="12" />
-          <folding>
-            <element signature="e#2374#5925#0#HTML" />
-          </folding>
+        <state relative-caret-position="1155">
+          <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/docs/charts.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
         </state>
       </provider>
     </entry>
