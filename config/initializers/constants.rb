@@ -11,10 +11,10 @@ RATE_LIMIT_FREQUENCY = '15'
 # main production server to handle all requests (can be a proxy)
 APPLICATION_IP_ADDRESS = '127.0.0.1'
 
-#HOST = '13.52.38.48:8080'
+#HOST = 'aws_nats.digitalgod.org:8080'
 
 # domain for the API (used for production links)
-#API_DOMAIN = 'http://13.52.38.48:8080/'
+#API_DOMAIN = 'http://aws_nats.digitalgod.org:8080/'
 
 # get api key from HTTP headers if this value is present
 HTTP_HEADER_API_KEY_NAME = 'THINGSPEAKAPIKEY'
@@ -27,7 +27,7 @@ CONSUMER_KEY = ''
 CONSUMER_SECRET = ''
 
 # reset password base url
-RESET_PASSWORD_URL = 'http://13.52.38.48:8080//users/reset_password/'
+RESET_PASSWORD_URL = 'http://aws_nats.digitalgod.org:8080//users/reset_password/'
 
 # allow only these additional locales (use downcase, easier to parse)
 ALLOWED_LOCALES = ['pt-br','it']
