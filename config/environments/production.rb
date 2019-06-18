@@ -72,5 +72,9 @@ Thingspeak::Application.configure do
 
   config.assets.js_compressor  = :uglifier
   config.assets.css_compressor = :scss
+
+  # Disabling new relic 20190618
+  NEWRELIC_AGENT_ENABLED=false
+
 end
 
