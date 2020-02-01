@@ -76,5 +76,9 @@ Thingspeak::Application.configure do
   # Disabling new relic 20190618
   NEWRELIC_AGENT_ENABLED=false
 
+  # Disable server-side caching. tmp/cache fills up and eventually aws-ec2 stops responding. 20200131
+  # https://stackoverflow.com/questions/8136165/disable-server-side-caching-in-rails-production-environment
+  config.action_controller.perform_caching = false
+  config.cache_store = :null_store
 end
 
