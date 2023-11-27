@@ -1,4 +1,5 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
+// This is a manifest file that'll be compiled into application.js (see rake assets:precompile), 
+// which will include all the files
 // listed below.
 //
 // Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
@@ -30,6 +31,8 @@
 /// If we were to remove the manual script tags for jQuery 1.9.1 throughout the
 /// site and add require jquery and jquery-ui below, then a lot of the site
 /// will break as its code is dependent on jquery 1.9.1. -- 20190322
+///
+/// Replacing references to googleapis.com with https://code.jquery.com/jquery-1.9.1.min.js and https://code.jquery.com/ui/1.9.1/jquery-ui.min.js 20231127
 /////////////////////////////////////////////////////////////////////////////////
 
 //= require jquery_ujs
@@ -55,4 +58,3 @@
 // NOTE: these changes require compilation!
 //= require highcharts-7.0.3.js
 //= require exporting.js
-

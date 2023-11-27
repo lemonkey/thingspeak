@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="text/javascript" src="http<%= 's' if @ssl %>://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!--<script type="text/javascript" src="http<%= 's' if @ssl %>://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+  <!-- the above no longer works... added local copy to application.js 20231127 -->
+  <script type="text/javascript" src="http<%= 's' if @ssl %>://code.jquery.com/jquery-1.9.1.min.js"></script>-->
+
   <script type="text/javascript" src="<%= @map_domain %>/maps/api/js?sensor=false"></script>
   <script type="text/javascript">
     // when document is ready

@@ -1,5 +1,8 @@
 <!-- This jquery import is necessary. 20190322 -->
-<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+<!--<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>-->
+<!-- the above no longer works... added local copy to application.js 20231127 -->
+<script type="text/javascript" src="//code.jquery.com/1.9.1-1.9.1.min.js"></script>
+
 <script type='text/javascript' src='https://www.google.com/jsapi'></script>
 <script type='text/javascript'>
 

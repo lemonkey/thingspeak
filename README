@@ -1,0 +1,30 @@
+# 20231127
+
+NOTE: our run scripts don't currently recompile assets.
+
+Must run "rake assets:precompile" for public/assets/ files to be updated.
+
+See also app/assets/javascript/application.js
+
+WARNING: 
+
+Jquery and jquery-ui 1.9.1 no longer being hosted by google...
+
+Added them manually to libs...
+
+Error when running "rake assets:precompile"
+
+Sprockets::FileNotFound: couldn't find file './libs/jquery/1.9.1/jquery-1.9.1/jquery-1.9.1.min.js'
+
+Fixed path used in application.js
+
+Successful...
+
+I, [2023-11-27T20:05:46.031216 #22153]  INFO -- : Writing /home/ec2-user/source/rails/thingspeak/public/assets/application-cc8640affff108764b9b31b2bc9b24d9.js
+
+Backed out changes to application.json, replaced with direct references to jquery
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js"></script>
+
+
